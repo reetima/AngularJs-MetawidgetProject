@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	
+<html ng-app="myApp">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js" type="text/javascript"></script>
+		<script src="http://metawidget.org/js/4.2/metawidget-core.min.js" type="text/javascript"></script>
+		<script src="http://metawidget.org/js/4.2/metawidget-angular.min.js" type="text/javascript"></script>
+	
+		<script src="js/myscript.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	<body ng-controller="myController">
+		<h1> {{title}} </h1>
+		<metawidget id="metawidget" ng-model="person" config="metawidgetConfig">
+		     <button ng-click="save()">Save</button>
+		</metawidget>
+		
+	</body>
+
+</html>
